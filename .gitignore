@@ -4,7 +4,6 @@
 *.so
 
 # logs
-log
 logs
 
 # Editors
