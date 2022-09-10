@@ -59,7 +59,7 @@ endif
 
 # Linux command settings
 FIND := find . ! -path './third_party/*' ! -path './vendor/*'
-XARGS := xargs --no-run-if-empty
+XARGS := xargs
 
 # Makefile settings
 ifndef V

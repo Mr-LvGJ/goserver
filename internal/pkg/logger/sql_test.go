@@ -6,8 +6,8 @@
 package logger_test
 
 import (
+	"encoding/json"
 	"fmt"
-	"json"
 	"regexp"
 	"strings"
 	"testing"

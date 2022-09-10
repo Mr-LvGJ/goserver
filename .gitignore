@@ -3,7 +3,8 @@
 *.a
 *.so
 .idea
-
+.vscode
+configs/.*.yaml
 
 # logs
 logs
@@ -37,3 +38,6 @@ _testmain.go
 # custom
 .todo
 _output
+
+# cmd
+cmd/goserver/__*
