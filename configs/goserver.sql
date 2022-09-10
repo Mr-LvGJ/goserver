@@ -34,9 +34,9 @@ DROP TABLE IF EXISTS `post`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `post` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) NOT NULL,
-  `postID` varchar(256) NOT NULL,
-  `title` varchar(256) DEFAULT NULL,
+  `username` varchar(128) NOT NULL,
+  `postID` varchar(128) NOT NULL,
+  `title` varchar(128) DEFAULT NULL,
   `content` longtext DEFAULT NULL,
   `createdAt` timestamp NOT NULL DEFAULT current_timestamp(),
   `updatedAt` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),

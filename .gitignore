@@ -3,7 +3,8 @@
 *.a
 *.so
 .idea
-
+.vscode
+configs/.*.yaml
 
 # logs
 logs
