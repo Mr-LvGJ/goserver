@@ -5,8 +5,8 @@ import (
 )
 
 func TestGenShortId(t *testing.T) {
-	shortId, err := GenShortId()
-	if shortId == "" || err != nil {
+	shortId := GenShortId()
+	if shortId == "" {
 		t.Error("GenShortId failed!")
 	}
 
@@ -22,9 +22,9 @@ func BenchmarkGenShortId(b *testing.B) {
 func BenchmarkGenShortIdTimeConsuming(b *testing.B) {
 	b.StopTimer() //调用该函数停止压力测试的时间计数
 
-	shortId, err := GenShortId()
-	if shortId == "" || err != nil {
-		b.Error(err)
+	shortId := GenShortId()
+	if shortId == "" {
+		b.Error("error")
 	}
 
 	b.StartTimer() //重新开始时间
