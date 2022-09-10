@@ -38,3 +38,6 @@ _testmain.go
 # custom
 .todo
 _output
+
+# cmd
+cmd/goserver/__*
